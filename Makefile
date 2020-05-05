@@ -14,7 +14,7 @@ install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
 	pip install -U wheel &&\
-	pip install -U pylint &&\
+	pip install -U pylint==2.1.1 &&\
 	pip install -r requirements.txt
 
 test:

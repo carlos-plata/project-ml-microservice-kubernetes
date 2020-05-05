@@ -15,7 +15,7 @@ install:
 	pip install --upgrade pip &&\
 	pip install -U pylint &&\
 	pip install -r requirements.txt &&\
-        pip show -f pylint
+	export PATH=$HOME/.local/bin:$PATH
 
 test:
 	# Additional, optional, tests could go here

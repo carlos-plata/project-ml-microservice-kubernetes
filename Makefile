@@ -13,7 +13,9 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
-	pip install -r requirements.txt
+	pip install -U pylint &&\
+	pip install -r requirements.txt &&\
+        pip show -f pylint
 
 test:
 	# Additional, optional, tests could go here
